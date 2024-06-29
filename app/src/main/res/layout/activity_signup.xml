@@ -12,10 +12,12 @@
         android:layout_height="217dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="108dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.99"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229"
         app:srcCompat="@drawable/logo" />
 
     <TextView
@@ -33,20 +35,19 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginBottom="36dp"
         android:text="SignUp"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextText2"
         android:layout_width="300dp"
         android:layout_height="38dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/style1"
         android:drawableStart="@drawable/user_02"
         android:drawableLeft="@drawable/user_02"
@@ -57,30 +58,30 @@
         android:paddingLeft="10dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.477"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="295dp"
         android:layout_height="42dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/style1"
         android:drawableStart="@android:drawable/ic_lock_lock"
         android:drawablePadding="12dp"
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="439dp" />
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="300dp"
         android:layout_height="38dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/style1"
         android:drawableStart="@android:drawable/sym_action_call"
         android:ems="10"
@@ -88,10 +89,8 @@
         android:inputType="phone"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView13"
@@ -106,7 +105,8 @@
         android:id="@+id/button6"
         android:layout_width="120dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="148dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="132dp"
         android:background="@drawable/style2"
         android:drawableLeft="@drawable/google_icon_2"
         android:drawablePadding="5dp"
@@ -117,15 +117,15 @@
         android:textDirection="firstStrongLtr"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/appCompatButton"
-        app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintVertical_bias="0.018" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/appCompatButton"
         android:layout_width="120dp"
         android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/style2"
         android:drawableLeft="@drawable/facebook_3_1"
         android:fadingEdge="none"
@@ -133,7 +133,5 @@
         android:text="FaceBook"
         android:textColor="#CDD5CE"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.275"
-        tools:layout_editor_absoluteX="275dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
